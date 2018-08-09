@@ -363,7 +363,6 @@ export default class Compiler {
 			const match = pattern.exec(str);
 
 			const snippet = this.code.snip(+match[1], +match[2]);
-
 			compiled.addSource({
 				filename,
 				content: snippet,
